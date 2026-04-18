@@ -830,17 +830,28 @@ header {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* Vertical labels on cards */
-.label {
-  transform: rotate(-90deg) !important;
-  transform-origin: center !important;
-  position: absolute !important;
-  left: 25px !important;
-  bottom: 40px !important;
-  white-space: nowrap !important;
-  z-index: 2 !important;
-  font-size: 28px !important;
-  font-weight: 700 !important;
-  line-height: 0.85 !important;
-  text-align: center !important;
+/* Project card label position */
+#mywork .Project {
+  position: relative !important;
 }
+
+#mywork .Project .label {
+  position: absolute !important;
+  left: 40px !important;
+  bottom: 30px !important;
+  transform: rotate(-90deg) !important;
+  transform-origin: left bottom !important;
+  white-space: nowrap !important;
+  z-index: 20 !important;
+  font-size: 27px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: 3px !important;
+}
+
+/* Keep colours */
+#mywork .label.yellow       { color: #F7DC70 !important; }
+#mywork .label.orange       { color: #E5A449 !important; }
+#mywork .label.dark-orange  { color: #F86005 !important; }
+#mywork .label.purple       { color: #A171F4 !important; }
+#mywork .label.blue         { color: #8F46F0 !important; }
