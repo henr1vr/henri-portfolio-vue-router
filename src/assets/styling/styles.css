@@ -813,9 +813,9 @@ form textarea {
 
 /* Disable state for Vue contact form button */
 .submit-btn:disabled {
-    opacity: 0.35;           /* ← this is what you asked for */
+    opacity: 0.35; 
     cursor: not-allowed;
-    background: #666;        /* slightly darker when disabled */
+    background: #666;
     color: #aaa;
 }
 
@@ -824,13 +824,13 @@ form textarea {
     transition: all 0.3s ease;
 }
 
-/* ==================== FIX 1: Nav always visible ==================== */
+/*  Nav always visible  */
 header {
   background-color: hsla(0, 0%, 100%, 0.95) !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* ==================== FIX 2: Vertical labels on cards ==================== */
+/* Vertical labels on cards */
 .label {
   transform: rotate(-90deg) !important;
   transform-origin: center !important;
