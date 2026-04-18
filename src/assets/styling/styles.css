@@ -501,12 +501,10 @@ color: #000000;
     color: #fff;
     flex-shrink: 0;
 }
-
-/* THIS IS THE FIX: give the bar a proper height so it shows on large screens */
 .bar {
     width: 4px;
-    min-height: 85px;              /* ← tall enough to look connected */
-    background: #fff;              /* default fallback */
+    min-height: 85px; 
+    background: #fff;
 }
 
 /* Coloured bars (same as before) */
@@ -813,7 +811,7 @@ form textarea {
 
 /* Disable state for Vue contact form button */
 .submit-btn:disabled {
-    opacity: 0.35; 
+    opacity: 0.35;
     cursor: not-allowed;
     background: #666;
     color: #aaa;
@@ -823,35 +821,3 @@ form textarea {
 .submit-btn {
     transition: all 0.3s ease;
 }
-
-/*  Nav always visible  */
-header {
-  background-color: hsla(0, 0%, 100%, 0.95) !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
-}
-
-/* Project card label position */
-#mywork .Project {
-  position: relative !important;
-}
-
-#mywork .Project .label {
-  position: absolute !important;
-  left: 40px !important;
-  bottom: 30px !important;
-  transform: rotate(-90deg) !important;
-  transform-origin: left bottom !important;
-  white-space: nowrap !important;
-  z-index: 20 !important;
-  font-size: 27px !important;
-  font-weight: 700 !important;
-  line-height: 1 !important;
-  letter-spacing: 3px !important;
-}
-
-/* Keep colours */
-#mywork .label.yellow       { color: #F7DC70 !important; }
-#mywork .label.orange       { color: #E5A449 !important; }
-#mywork .label.dark-orange  { color: #F86005 !important; }
-#mywork .label.purple       { color: #A171F4 !important; }
-#mywork .label.blue         { color: #8F46F0 !important; }

@@ -33,7 +33,7 @@
           <img src="@/assets/images/Ilitha Preview image.png" alt="Ilitha">
         </div>
         <div class="Project" @mouseenter="showProject(3)">
-          <span class="label purple">Fa Tanimals</span>
+          <span class="label purple">FaTanimals</span>
           <img src="@/assets/images/fa tanimals Preview image.png" alt="Fa Tanimals">
         </div>
         <div class="Project" @mouseenter="showProject(4)">

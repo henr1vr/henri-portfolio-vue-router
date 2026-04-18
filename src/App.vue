@@ -3,9 +3,11 @@
     <!-- Navigation -->
     <header>
       <nav class="nav">
-        <router-link to="/" class="nav-link">My Work</router-link>
-        <router-link to="/about" class="nav-link">About Me</router-link>
-        <router-link to="/contact" class="nav-link">Get In Touch</router-link>
+        <ul class="nav-menu">
+          <li><router-link to="/" class="nav-link">My Work</router-link></li>
+          <li><router-link to="/about" class="nav-link">About Me</router-link></li>
+          <li><router-link to="/contact" class="cta nav-link">Get In Touch</router-link></li>
+        </ul>
       </nav>
     </header>
 
@@ -29,42 +31,67 @@ export default {
   padding: 0;
 }
 
+/* NAV */
 header {
-  background-color: rgba(255, 255, 255, 0.85);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 1rem 0;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  padding: 20px 0;
 }
 
-.nav {
+.nav-menu {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  max-width: 1200px;
+  gap: 30px;
+  background-color: white;
+  border-radius: 0px;
+  padding: 20px 20px;
+  width: fit-content;
   margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .nav-link {
-  color: #000;
+  color: #111;
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
-  padding: 8px 24px;
-  border-radius: 8px;
-  transition: all 0.3s;
+  padding: 8px 22px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+  background-color: #f0f0f0;
+}
+
+/* Get In Touch - Yellow button */
+.cta {
+  background-color: #D8CF3C !important;
+  color: #000 !important;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-weight: 700 !important;
+  padding: 8px 28px !important;
+  border: 2px solid #000;
+  border-radius: 0px;
+}
+
+/* Active link highlight */
 .nav-link.router-link-active {
   background-color: #D8CF3C;
-  color: #000;
 }
 
-main {
-  padding-top: 100px; /* space for fixed header */
+/* Mobile Hamburger */
+@media (max-width: 767px) {
+  .nav-menu {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
 }
+
 </style>
