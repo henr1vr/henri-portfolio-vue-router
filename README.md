@@ -11,6 +11,7 @@ I created three main views in the `src/views/` folder:
 - **HomeView.vue** (`/`): Hero section with background image, name, title, subtitle, tags, and the interactive "My Work" project gallery (with hover modals on desktop and click-to-open modals on mobile).
 - **AboutView.vue** (`/about`): Two-column layout featuring a personal photo, "Hey, I'm HENRI" name card, Download CV button, software skills icons, bio text, and Experience Timeline.
 - **ContactView.vue** (`/contact`): Professional contact form with real-time validation, error messages, and a success modal.
+- **NotFoundView.vue** : I also created a styled 404 page with a Back to Home button to act as a fallback.
 
 All views follow Vue’s Single File Component structure and are cleanly separated.
 
