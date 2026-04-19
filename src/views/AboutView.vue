@@ -11,14 +11,18 @@
           </div>
 
           <!-- Name card -->
-          <div class="name-card">
-            Hey, I'm <span class="henri">HENRI</span>.
-          </div>
+<div class="name-card">
+  Hey, I'm <span class="henri">HENRI</span>.
+</div>
 
-          <!-- Download CV -->
-          <a href="#" class="cv-btn">
-            Download_CV <span class="arrow">→</span>
-          </a>
+<!-- Download CV button -->
+<a 
+  href="/Henri van Rensburg UX Designer CV 2026.pdf" 
+  download="Henri van Rensburg UX Designer CV 2026.pdf"
+  class="cv-btn"
+>
+  Download_CV <span class="arrow">→</span>
+</a>
 
           <!-- Software Skills -->
           <div class="skills">
