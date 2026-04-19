@@ -3,7 +3,9 @@
     <!-- Navigation -->
     <header>
       <nav class="nav">
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <!-- Checkbox + Hamburger -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" ref="navToggle">
+
         <label for="nav-toggle" class="hamburger">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -12,9 +14,9 @@
 
         <!-- Menu -->
         <ul class="nav-menu">
-          <li><router-link to="/" class="nav-link">My Work</router-link></li>
-          <li><router-link to="/about" class="nav-link">About Me</router-link></li>
-          <li><router-link to="/contact" class="nav-link cta">Get In Touch</router-link></li>
+          <li><router-link to="/" class="nav-link" @click="closeMobileMenu">My Work</router-link></li>
+          <li><router-link to="/about" class="nav-link" @click="closeMobileMenu">About Me</router-link></li>
+          <li><router-link to="/contact" class="nav-link cta" @click="closeMobileMenu">Get In Touch</router-link></li>
         </ul>
       </nav>
     </header>
@@ -28,7 +30,14 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    closeMobileMenu() {
+      if (this.$refs.navToggle) {
+        this.$refs.navToggle.checked = false;
+      }
+    }
+  }
 }
 </script>
 
